@@ -517,7 +517,7 @@ footer {
   
         .flip-card-back{
             transform: perspective(600px) rotateY(-180deg);
-            
+	    backface-visibility: hidden;            
         }
         
         .flip-card-front{
