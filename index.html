@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	
+	<title>College Management System</title>
+
+</head>
+
+<header>
+
+	<div class="header">
+		<div class="container">
+			<div class="jumbotron">
+
+	 			<h1><strong>College Management System</strong></h1>
+	 		
+
+			</div>
+		
+
+			
+			
+		</div>
+	</div>
+
+
+	</header>
+
+
+			<br>
+		
+		
+	
+	<body>
+				
+
+			
+		<div class="container">
+			
+			<div class="card">
+  				<h2 class="card-header">Introduction</h2>
+  					<div class="card-body">
+
+
+  				        <p class="text">College Management System is a Collage themed Database created in MySQL and accessed with SQL.   SQL is used in the accessing, updating, and manipulation of data in a database while MySQL is an RDBMS that allows keeping the data that exists in a database organized. SQL is a Structured Query Language and MySQL is a RDBMS to store, retrieve, modify and administrate a database</p>
+
+  						<br>
+  						<br>
+
+  						<div class="book">
+						  <span class="page turn"></span>
+						  <span class="page turn"></span>
+						  <span class="page turn"></span>
+						  <span class="page turn"></span>
+						  <span class="page turn"></span>
+						  <span class="page turn">College Management System
+						  <br>
+						  <br>
+						  By Aisha Durrani</span>
+						  <span class="cover"></span>
+						  <span class="page"></span>
+						  <span class="cover turn"></span>
+						</div>
+
+						<br>
+
+						<h3>Step One:</h3>
+
+						<br>
+
+						<p class="text">1. First we create a Database named College Management System.</p>
+    					
+    		            <p class="text">CREATE DATABASE CollegeManagementSystem;</p>
+
+    		            <br>
+    		            <br>
+
+    		            <h3>Step Two:</h3>
+
+						<br>
+
+						<p class="text">2. Next we create tables in MySQL for our database.  A total of 6 tables are created with unique names, list of columns, data types and keys.</p>
+    					
+    		            <p class="text">Flip the images below to see a detailed description of each table.</p>
+
+    		            <br>
+    		            <br>
+
+
+
+
+    		            <div class="container">
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>Department Table</u></h6></p>
+
+    							 	  <br>
+    							 	
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql1.png" alt="SQL 1" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      <br>
+												      
+												      <p>The Department Table consists for 2 columns. 
+												      <br>
+												      <br>
+												      1. "id" data type of INT and is also the primary key and 
+												      <br>
+												      2. "name" data type of VARCHAR(50).</p>
+												
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+
+
+
+     						
+     							
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Course Table</u></h6></p>
+
+					 			   	  <br>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql2.png" alt="SQL 2" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      <br>
+												      
+												      <p>The Course Table consists for 3 columns.
+												      <br>
+												      <br>
+												      1. "id" data type of INT and is also the primary key,
+												      <br>
+												      2. "name" data type of VARCHAR(50) and 
+												      <br>
+												      3. "deptId" an INT and also the foreign key.</p>
+												     
+												    </div>
+												  </div>
+												</div>
+     								
+
+   								   
+								</div>		
+    					    </div>
+    					</div>
+
+
+    					    <br>
+    					    <br>
+    					    <br>
+
+
+    					
+
+   					    
+
+
+    		            <div class="container">
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>Faculty Table</u></h6></p>
+
+    							 	<br>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql3.png" alt="SQL 3" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												       <br>
+												       
+												      <p>The Faculty Table consists of 4 columns.
+												      <br>
+												      <br>
+												      1. "id" data type of INT and is also the primary key,
+												      <br>
+												      2. "firstname" data type VARCHAR(30),
+												      <br>
+												      3. "lastname" data type VARCHAR(50) and
+												      <br>
+												      4.  "deptId" an INT and also the foreign key.</p>
+												      
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     							
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Faculty Course Table</u></h6></p>
+
+					 			   	  <br>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql4.png" alt="SQL 4" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      <br>
+												      
+												      <p>The Faculty Course Table consists of 2 columns.
+												      <br>
+												      <br>
+												      1. "facultyId" data type INT and 
+												      <br>
+												      2. "courseId" data type INT and also the foreign key.</p>
+												      
+												    </div>
+												  </div>
+												</div>
+     								
+
+   								    </div>
+								</div>		
+    					    </div>
+
+
+
+    					    <br>
+    					    <br>
+    					    <br>
+    					   
+
+   					
+
+
+    		            <div class="container">
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>Student Table</u></h6></p>
+
+    							 	<br>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql5.png" alt="SQL 5" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      <br>
+												    
+												      <p style="font-size: 13px;">The Student Table consists of 9 columns.
+												      <br>
+												      <br>
+												      1. "id" data type of INT and is also the primary key,
+												      <br>
+												      2. "firstname" data type VARCHAR(30),
+												      <br>
+												      3. "lastname" data type VARCHAR(50),
+												      <br>
+												      4.  "street" data type VARCHAR(50),
+												      <br>
+												      5. "streetDetail" data type VARCHAR(30),
+												      <br>
+												      6. "city" data type VARCHAR(30),
+												      <br>
+												      7.  "state" data type VARCHAR(30),
+												      <br>
+												      8.  "postalCode" data type CHAR(5) and
+												      <br>
+												      9. "majorId" data type INT and also the foreign key.
+												      </p>
+												     
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Student Course Table</u></h6></p>
+
+					 			   	  <br>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql6.png" alt="SQL 6" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      <br>
+												      
+												      <p>The Student Course Table consists of 4 columns.
+												      <br>
+												      <br>
+												      1. "studentID" data type INT and the foreign key,
+												      <br>
+												      2. "courseId" data type INT,
+												      <br>
+												      3. "progress" data type INT and 
+												      <br>
+												      4.  "startDate" data type DATE also a foreign key.
+												      </p>
+												      
+												    </div>
+												  </div>
+												</div>
+     								
+
+   								    </div>
+								</div>		
+    					    </div>
+
+
+    				 <br>
+    		         <br>
+    		         <br>
+
+    		            <h3>Step Three:</h3>
+
+						<br>
+
+						<p class="text">3. Next we add inserts to our Database, Inserts can be found at the link below.</p>
+
+
+    		            <br>
+
+    		            <p class="text">
+    		            	<a href= "https://github.com/aishadurrani/College-Management-System-files/blob/master/SQL-Assignment/Inserts.sql" alt= "Inserts">Click to view inserts on Github</a>
+
+    		            </p>
+
+    		            <br>
+    		            <br>
+    		            <br>
+
+    		             <h3>Step Four:</h3>
+
+						<br>
+
+						<p class="text">4. The following 13 questions will check the functionality & accuracy of the Database</p>
+
+						<p class="text">Flip the code images below to see the results of each the query.</p>
+
+
+
+    		            <br>
+
+
+
+    		            <div class="container">
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>Courses in each department</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql7.png" alt="SQL 7" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql7b.png" alt="SQL 7b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Students in each course from Student</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql8.png" alt="SQL 8" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql8b.png" alt="SQL 8b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>		
+    					    </div>
+
+
+    					    <br>
+    					    <br>
+    					    <br>
+
+   					    
+
+
+    		            <div class="container">
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>Name of each course</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql9.png" alt="SQL 9" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql9b.png" alt="SQL 9b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Students in each course from Course</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql10.png" alt="SQL 10" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql10b.png" alt="SQL 10b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>		
+    					    </div>
+
+
+    					    <br>
+    					    <br>
+    					    <br>
+
+     						
+
+     							<div class="row">
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Student enrolled in each year, from Student Course</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql11.png" alt="SQL 11" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql11b.png" alt="SQL 11b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Students each year from start date</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql12.png" alt="SQL 12" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql12b.png" alt="SQL 12b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>		
+    					    
+   					
+							
+    					    <br>
+    					    <br>
+    					    <br>
+
+    		          
+
+
+						 	<div class="row">
+
+    							 <div class="col1">
+
+    							 	<p class="text"><h6><u>First & Last name of students in each course</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql13.png" alt="SQL 13" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql13b.png" alt="SQL 13b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Average progress of each Student, descending</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql14.png" alt="SQL 14" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql14b.png" alt="SQL 14b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>	
+
+
+
+
+    					    <br>
+    					    <br>
+    					    <br>	
+    					 
+
+     					<div class="row">
+
+     						     <div class="col1">
+   								 	
+									<p class="text"><h6><u>Course name & average progress</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql15.png" alt="SQL 15" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql15b.png" alt="SQL 15b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Maximum average</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql16.png" alt="SQL 16" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql16b.png" alt="SQL 16b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>
+
+
+
+    					    <br>
+    					    <br>
+    					    <br>		
+    					   
+
+
+     					<div class="row">
+
+     						     <div class="col1">
+   								 	
+									<p class="text"><h6><u>Student average per faculty member</u></h6></p>
+
+    							 	 <br>
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql17.png" alt="SQL 17" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql17b.png" alt="SQL 17b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+     						     <div class="col1">
+   								 	
+
+					 			   	  <p class="text"><h6><u>Student average per faculty member having more than >= 0.9* max average</u></h6></p>
+
+					 				    
+
+     									    
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql18.png" alt="SQL 18" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql18b.png" alt="SQL 18b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+   								    </div>
+								</div>
+
+
+
+    					    <br>
+    					    <br>
+    					    <br>	
+
+
+     					<div class="row">
+
+     						     <div class="col1">
+   								 	
+									<p class="text"><h6><u>First & Last name with Min and Max grade</u></h6></p>
+
+    							 	  
+
+     								     	<div class="flip-card">
+												  <div class="flip-card-inner">
+												    <div class="flip-card-front">
+												      <img src="images/sql19.png" alt="SQL 19" style="width:100%;height:100%;">
+												    </div>
+												    <div class="flip-card-back">
+												      
+												      <img src="images/sql19b.png" alt="SQL 19b" style="width:100%;height:100%;">
+												    </div>
+												  </div>
+												</div>
+
+
+     							</div>
+
+			   			</div>
+
+
+			   			<br>
+			   			<br>
+			   			<br>
+
+
+			   			<p class="text">The EER Diagram is available below.</p>
+
+			   			<br>
+
+
+   						 <button type="button" class="btn btn" data-toggle="modal" data-target= "#modal" id= "button">Click to view EER Diagram</button>
+
+							<div id="modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  								<div class="modal-dialog modal-lg">
+   					   				 <div class="modal-content">
+   					   				 	<div class ="modal-header"><h4 class='col-12 modal-title text-center'>EER Diagram</h4></div>
+   					   				 		<div class ="modal-body">
+
+
+
+   										 <p class="text">
+
+   										 	<img class="card-image2" src="images/sql20.png" alt="EER Diagram">
+	
+   										 </p>
+      
+   				 					</div>
+  								</div>
+  							</div>
+						</div>
+
+
+
+			   			<br>
+			   			<br>
+			   			<br>
+			   			<br>
+
+			   			<p class="text">This concludes out College Management System Prototype.</p>
+	
+
+
+    		           
+    		     
+    		            <br>
+    		            <br>
+
+
+
+     							<p class="text">
+
+			   					 	<img class="card-image1" src="images/books2.jpg" alt="books">
+
+			   					</p>
+   					
+
+   					
+
+			
+					
+
+					 <br>
+					 <br>
+					 <br>
+					 <br>
+
+   		
+</div>
+</div>
+</div>
+
+
+
+
+
+	<script type="text/javascript" src=""></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+			
+
+					
+
+
+</body>
+
+
+	<footer>Aisha Durrani - PBPS</footer>
+
+
+
+
+</html>
